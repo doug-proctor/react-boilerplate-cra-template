@@ -34,7 +34,7 @@ import { useInjectSaga } from 'utils/redux-injectors';
 {{/if}}
 {{/if}}
 {{#if wantSlice}}
-import { reducer, sliceKey } from './slice';
+import { reducer, sliceKey, actions } from './slice';
 import { select{{ properCase ComponentName }} } from './selectors';
 {{/if}}
 {{#if wantSaga}}
